@@ -10,10 +10,13 @@ function deleteTask(task) {
 }
 
 const search = ref("");
-
+// sort the task by alphabetic order
+const sortedTasks = computed(() => {
+  return tasks.value.sort((a, b) => a.text.localeCompare(b.text));
+});
 // computed for filtered tasks en utilisant search du input
 const filteredTasks = computed(() => {
-  return tasks.value.filter((task) => task.text.includes(search.value));
+  return sortedTasks.value.filter((task) => task.text.includes(search.value));
 });
 </script>
 

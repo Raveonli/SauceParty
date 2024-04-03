@@ -1,7 +1,3 @@
-# Vue 3 + Vite
-
-https://chabloz.eu/webmobui
-
 # idées
 
 serait de créer des relations entre les quantités et les recettes, , donc déja intégrer les quantités
